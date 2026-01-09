@@ -27,8 +27,15 @@ Pod::Spec.new do |spec|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  # spec.description  = <<-DESC
-  #                  DESC
+
+spec.description = <<-DESC
+Core is a foundational framework that contains shared business logic,
+utilities, and core components used across multiple modules in a
+modularized iOS architecture. This framework is designed to improve
+code reusability, maintainability, and separation of concerns in
+Dicoding iOS projects.
+DESC
+
 
   spec.homepage     = "https://github.com/adedwi1808/Modularization-Core-Module"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -41,7 +48,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -133,8 +140,6 @@ Pod::Spec.new do |spec|
   #  you can include multiple dependencies to ensure it works.
 
   spec.swift_version = "5.5"
-
-  spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
